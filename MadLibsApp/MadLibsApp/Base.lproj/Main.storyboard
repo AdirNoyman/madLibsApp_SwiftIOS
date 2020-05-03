@@ -50,14 +50,20 @@
                                     <segment title="Less"/>
                                     <segment title="More"/>
                                 </segments>
+                                <connections>
+                                    <action selector="lessOrMoreValueDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XU2-0k-6fm"/>
+                                </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-q4-gTj">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-q4-gTj">
                                 <rect key="frame" x="20" y="508" width="374" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="42" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="v7M-gq-sSK">
                                         <rect key="frame" x="107" y="68" width="251" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="sliderDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1O7-5l-nLi"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8g-NP-YAc">
                                         <rect key="frame" x="192" y="129" width="36" height="21"/>
@@ -83,6 +89,9 @@
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BOM-N5-v1F">
                                         <rect key="frame" x="262" y="123" width="94" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="stepperDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zcr-2r-56F"/>
+                                        </connections>
                                     </stepper>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NfQ-8B-U8h">
                                         <rect key="frame" x="8" y="8" width="358" height="32"/>
@@ -116,6 +125,9 @@
                                 <state key="normal" title="Create Story">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createStoryDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S6g-rN-PeK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.9233848492205593" blue="0.59688787596392712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
